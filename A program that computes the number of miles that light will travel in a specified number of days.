@@ -1,0 +1,30 @@
+Input :
+
+public class Program_that_computes_the_number_of_miles_that_light_will_travel_in_a_specified_number_of_days
+
+{
+public static void main(String args[])
+	{
+	int lightspeed;
+	long days;
+	long seconds;
+	long distance;
+	
+	lightspeed = 186000; // miles/second
+	days = 365; // one year/specify days
+	seconds = days * 24 * 60 * 60; // convert to seconds
+	distance = lightspeed * seconds;
+	
+	System.out.println("In " +days);
+	System.out.println("days light will travel about");
+	System.out.println(distance + "miles.");
+
+	}
+
+}
+
+Output :
+
+In 365
+days light will travel about
+5865696000000miles.
