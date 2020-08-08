@@ -1,0 +1,49 @@
+Input:
+
+public class Addition
+{
+	public static void main(String[] args)
+	{
+		int n; // n is the variable
+		int m; // m is another variable
+		int total; // total takes as variable where it will store the sum
+		int diff;
+		int multiple;
+		int division;
+		n = 50;
+		m = 100;
+		System.out.println("The number:"+ n);
+		System.out.println("The number:"+ m);
+		
+		total = m + n; // addition of variable
+		diff = m - n; // difference of variable
+		multiple = m*n; // multiplication of variable
+		division = m/n; // Division of variable
+		
+		System.out.println("Addition:");
+		System.out.println(total);
+		
+		System.out.println("Diffrenece:");
+		System.out.println(diff);
+		
+		System.out.println("Multiplication:");
+		System.out.println(multiple);
+		
+		System.out.println("Division:");
+		System.out.println(division);
+	}
+	
+
+}
+
+Output :
+The number:50
+The number:100
+Addition:
+150
+Diffrenece:
+50
+Multiplication:
+5000
+Division:
+2
