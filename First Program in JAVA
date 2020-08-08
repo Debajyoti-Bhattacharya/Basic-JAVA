@@ -1,0 +1,24 @@
+Input :
+
+public class HelloWorldApp
+{
+
+	public static void main(String[] args)
+	{
+		System.out.println("USA :\n United States of America");
+		System.out.println("UK:\n United Kingdom");
+		System.out.println("UAE:\n United Arab Emirates");
+
+	}
+
+}
+
+
+Output :
+
+USA :
+ United States of America
+UK:
+ United Kingdom
+UAE:
+ United Arab Emirates
