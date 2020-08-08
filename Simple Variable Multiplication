@@ -1,0 +1,23 @@
+Input :
+
+
+public class Anyname
+{
+	public static void main(String[] args)
+	{
+		int n; // n is the variable
+		n = 50; // this assigns n the value 50
+		System.out.println("The number:"+ n);
+		
+		n = n*2;
+		System.out.println("The number is multiple by 2:");
+		System.out.println(n);
+	}
+
+}
+
+Output :
+
+The number:50
+The number is multiple by 2:
+100
