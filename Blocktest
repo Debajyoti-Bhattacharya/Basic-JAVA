@@ -1,0 +1,45 @@
+Input :
+
+
+public class Blocktest
+{
+	public static void main(String args[]) 
+	{ 
+		int x , y;
+		x = 10;
+		y = 20;
+		for(x = 0; x<10; x++)
+		{
+			System.out.println("The X number:" + x);
+			System.out.println("The Y number:" + y);
+			y = y - 2;
+			
+		}
+		
+	}
+	
+
+}
+
+Output :
+
+The X number:0
+The Y number:20
+The X number:1
+The Y number:18
+The X number:2
+The Y number:16
+The X number:3
+The Y number:14
+The X number:4
+The Y number:12
+The X number:5
+The Y number:10
+The X number:6
+The Y number:8
+The X number:7
+The Y number:6
+The X number:8
+The Y number:4
+The X number:9
+The Y number:2
