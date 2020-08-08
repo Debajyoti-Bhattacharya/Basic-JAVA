@@ -1,0 +1,28 @@
+Input :
+
+public class FOR 
+{
+	public static void main(String args[]) 
+	{ 
+		int x;
+		for(x = 0; x<11 ; x++)
+		{
+			System.out.println("The X is :" + x);
+		}
+		
+	}
+
+}
+
+Output :
+The X is :0
+The X is :1
+The X is :2
+The X is :3
+The X is :4
+The X is :5
+The X is :6
+The X is :7
+The X is :8
+The X is :9
+The X is :10
