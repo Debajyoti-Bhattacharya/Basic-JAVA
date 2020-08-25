@@ -1,0 +1,34 @@
+Input :
+
+public class Binary_to_decimal {
+	public static void main(String args[]) {
+
+		java.util.Scanner newScan = new java.util.Scanner(System.in);
+		String a;
+		a = newScan.next();
+		char b[] = a.toCharArray();
+		int result = 0;
+		int size = a.length();
+		int power = a.length()-1;
+		for (int i = 0; i<size ;i++)
+		{
+			if( b[i] == '1')
+			{
+				result+= Math.pow(2,power)*1;
+				power--;
+		}
+			else {
+				power--;
+			}
+		
+		}
+		System.out.println(result);	
+	}
+}
+
+Output :
+111
+7
+
+1010
+10
