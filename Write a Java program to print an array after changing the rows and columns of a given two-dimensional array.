@@ -1,0 +1,58 @@
+Input:
+import java.util.Scanner;
+
+public class Test3 {
+	public static void main(String arg[]) {
+		int i, j;  
+	    System.out.println("Enter total rows and columns: ");  
+	    Scanner s = new Scanner(System.in);  
+	    int row = s.nextInt();  
+	    int column = s.nextInt();  
+	    int array[][] = new int[row][column];  
+	    System.out.println("Enter matrix Value:");  
+	    for(i = 0; i < row; i++)  
+	    {  
+	        for(j = 0; j < column; j++)   
+	            {  
+	            array[i][j] = s.nextInt();  
+	            System.out.print(" ");  
+	            }  
+	    } 
+	    
+	    System.out.println("The above matrix value before Changing ");  
+	    for(i = 0; i < row; i++)  
+	        {  
+	            for(j = 0; j < column; j++)  
+	            {  
+	            System.out.print(array[i][j]+" ");  
+	            }  
+	            System.out.println(" ");
+	        }  
+	    System.out.println("The above matrix value after changing ");  
+	    for(i = 0; i < column; i++)  
+	        {  
+	            for(j = 0; j < row; j++)  
+	            {  
+	                System.out.print(array[j][i]+" ");  
+	            }  
+	            System.out.println(" ");  
+	        }  
+	}
+
+}
+
+Output:
+Enter total rows and columns: 
+2 3
+Enter matrix Value:
+10 20 30 40 50 60
+      The above matrix value before Changing 
+10 20 30  
+40 50 60  
+The above matrix value after changing 
+10 40  
+20 50  
+30 60  
+
+
+
