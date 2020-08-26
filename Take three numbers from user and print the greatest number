@@ -1,0 +1,45 @@
+Input:
+import java.util.Scanner;
+
+public class Test1 {
+	public static void main(String args[]) {
+		java.util.Scanner newScan = new java.util.Scanner(System.in);
+		
+		int a;
+		int b;
+		int c;
+		Scanner myScan = new Scanner(System.in);
+		System.out.println("Enter First Number: ");
+		  a = myScan .nextInt();
+		  System.out.println("Enter Second Number: ");
+	        b = myScan.nextInt();
+	        System.out.println("Enter Third Integer: ");
+	        c = myScan.nextInt();
+	        if(a>b && a>c)
+	        	{
+	        	
+	        		System.out.println("The Greatest integer: "+a);
+	        	}
+	        	else
+	        	{
+	        		if(b>c)
+	        		{
+	        			System.out.println("The Greatest integer: "+b);
+	        		}
+	        		else
+	        		{
+	        			System.out.println("The Greatest integer: "+c);
+	        		}
+	        	}
+	        }
+	}
+  
+Output :
+Enter First Number: 
+25
+Enter Second Number: 
+78
+Enter Third Integer: 
+87
+The Greatest integer: 87
+
