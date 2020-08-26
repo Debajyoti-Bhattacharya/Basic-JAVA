@@ -1,0 +1,58 @@
+Input:
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String args[]) {
+		java.util.Scanner newScan = new java.util.Scanner(System.in);
+		int m,n;
+		int add = 0;
+		int mul = 0;
+		double avg = 0;
+		int diff = 0;
+		int dist = 0;
+		Scanner myScan = new Scanner(System.in);
+		System.out.println("Enter First Integer: ");
+		  m = myScan .nextInt();
+		  System.out.println("Enter Second Integer: ");
+	        n = myScan.nextInt();
+	        myScan.close();
+	        add = m + n;
+	        System.out.println("Sum of two integer: "+add);
+	        myScan.close();
+	        diff = m - n;
+	        System.out.println("Difference of two integer: "+diff);
+	        myScan.close();
+	        mul = m*n;
+	        System.out.println("Product of two integer: "+mul);
+	        myScan.close();
+	        avg = (m + n)/2;
+	        System.out.println("Avrage of two integer: "+avg);
+	        myScan.close();
+	        dist = m - n;
+	        System.out.println("Distance of two integer: "+dist);
+	        
+	        if(m>n)
+	        {
+	        	System.out.println("MAX integer: "+m);
+	        	System.out.println("MIN integer: "+n);
+	        }
+	        else
+	        {
+	        	System.out.println("MAX integer: "+n);
+	        	System.out.println("MIN integer: "+m);
+	        }
+	}
+}
+
+Output :
+Enter First Integer: 
+25
+Enter Second Integer: 
+5
+Sum of two integer: 30
+Difference of two integer: 20
+Product of two integer: 125
+Avrage of two integer: 15.0
+Distance of two integer: 20
+MAX integer: 25
+MIN integer: 5
