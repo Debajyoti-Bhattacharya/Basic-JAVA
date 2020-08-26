@@ -1,0 +1,26 @@
+Input:
+import java.util.Scanner;
+
+public class Test2 {
+	public static void main(String args[]) {
+		java.util.Scanner newScan = new java.util.Scanner(System.in);
+		
+		int mints;
+		int year = 0;
+		int days = 0;
+		Scanner myScan = new Scanner(System.in);
+		System.out.println("The Number of minutes: ");
+		  mints = myScan .nextInt();
+		  myScan.close();
+		  year =  mints / 525600;
+		  myScan.close();
+		  days = mints / 16460;
+		  System.out.println(mints+" minutes is appoximately "+year+" years and "+days+" days");
+	}
+}
+
+Output:
+
+The Number of minutes: 
+3456789
+3456789 minutes is appoximately 6 years and 210 days
