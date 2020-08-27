@@ -1,0 +1,20 @@
+Input :
+public class Test4 {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		java.util.Scanner newScanner = new java.util.Scanner(System.in);
+		int a = newScanner.nextInt();
+		int b = newScanner.nextInt();
+		System.out.println(a+"x"+b+"="+(a*b));
+
+	}
+
+}
+
+Output :
+
+25
+5
+25x5=125
