@@ -26,7 +26,7 @@ public class Test {
 	        System.out.println("Product of two integer: "+mul);
 	        myScan.close();
 	        avg = (m + n)/2;
-	        System.out.println("Avrage of two integer: "+avg);
+	        System.out.println("Average of two integer: "+avg);
 	        myScan.close();
 	        dist = m - n;
 	        System.out.println("Distance of two integer: "+dist);
@@ -52,7 +52,7 @@ Enter Second Integer:
 Sum of two integer: 30
 Difference of two integer: 20
 Product of two integer: 125
-Avrage of two integer: 15.0
+Average of two integer: 15.0
 Distance of two integer: 20
 MAX integer: 25
 MIN integer: 5
