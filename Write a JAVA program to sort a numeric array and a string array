@@ -1,0 +1,36 @@
+Input:
+package Assignment2;
+
+import java.util.Arrays;
+
+public class Question5 {
+	public static void main(String[] args) {
+		int[] my_array1 = {
+	            300, 900, 50, 600, 500, 
+	            200, 700, 100, 400, 1000, 
+	            800, 2000, 1500, 1800};
+	            
+	    String[] my_array2 = {
+	            "ECE",
+				
+	            "CSE",
+	            "IT",
+	            "EIE",
+	            "EEE",
+	            "EE"
+	        };        
+	    System.out.println("Original numeric array : "+Arrays.toString(my_array1));
+	    Arrays.sort(my_array1);
+	    System.out.println("Sorted numeric array : "+Arrays.toString(my_array1));
+	    
+	    System.out.println("Original string array : "+Arrays.toString(my_array2));
+	    Arrays.sort(my_array2);
+	    System.out.println("Sorted string array : "+Arrays.toString(my_array2));
+
+	}
+}
+Output:
+Original numeric array : [300, 900, 50, 600, 500, 200, 700, 100, 400, 1000, 800, 2000, 1500, 1800]
+Sorted numeric array : [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1500, 1800, 2000]
+Original string array : [ECE, CSE, IT, EIE, EEE, EE]
+Sorted string array : [CSE, ECE, EE, EEE, EIE, IT]
