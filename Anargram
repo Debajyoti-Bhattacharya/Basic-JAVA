@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Anargram {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter first String: ");
+        String a = input.nextLine().toLowerCase();
+        System.out.print("Enter Second String: ");
+        String b = input.nextLine().toLowerCase();
+
+        if(a.length() == b.length())
+        {
+            char[] charArray1 = a.toCharArray();
+            char[] charArray2 = b.toCharArray(); 
+
+            Arrays.sort(charArray1);
+            Arrays.sort(charArray2);
+        
+
+        boolean result = Arrays.equals(charArray1, charArray2);
+
+            if(result) {
+             System.out.println(a + " and " + b + " are anagram.");
+            }
+            else{
+                
+                System.out.println( a + " and " + b + " are not anagram.");
+            }
+        }
+            else {
+                System.out.println(a + " and " + b + " are not anagram.");
+            }
+        }
+    }
+    
+    
+    
+    Output:
+   Enter first String: Race
+   Enter Second String: Care
+   
+   race and care are anagram.
