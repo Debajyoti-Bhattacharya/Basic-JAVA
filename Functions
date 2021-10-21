@@ -170,6 +170,37 @@ Output :
 6
 Sum of Odd Numbers : 37.68
 
+A function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote:
+Input:
+import java.util.*;
+import java.util.Scanner;
+
+public class Functions {
+    public static int Vote(int n){
+        if (n<18){
+            System.out.println("Not Eligible");
+        }
+        else{
+            System.out.println("Eligible");
+        }
+        return n; 
+    }
+ public static void main(String[] args) {
+     Scanner sc= new Scanner(System.in);
+     int a = sc.nextInt();
+    int eli = Vote(a);
+ }
+    
+}
+Output:
+20
+Eligible
+17
+Not Eligible
+
+
+
+
 
 
 
