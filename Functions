@@ -1,4 +1,4 @@
-Factorial : 
+(1) A function to print out the factorial of a number : 
 Input: 
 import java.util.*;
 import java.util.Scanner;
@@ -33,7 +33,7 @@ Output:
 -5
 Invaild Number
 
-Average of Three Numbers:
+(2) A function to print out the average of Three Numbers:
 Input:
 import java.util.*;
 import java.util.Scanner;
@@ -62,7 +62,7 @@ Output:
 Average of Three Numbers: 5
 
 
-Greater Number : 
+(3) A function to print out the greater Number between two number : 
 Input:
 import java.util.*;
 import java.util.Scanner;
@@ -96,7 +96,7 @@ Greater Number : 6
 5
 Greater Number : 6
 
-A function to print the sum of all odd numbers from 1 to n:
+(4) A function to print the sum of all odd numbers from 1 to n:
 Input:
 import java.util.*;
 import java.util.Scanner;
@@ -145,7 +145,7 @@ Odd Number : 17
 Odd Number : 19
 Sum of Odd Numbers : 100
 
-A function that takes in the radius as input and returns the circumference of a circle:
+(5) A function that takes in the radius as input and returns the circumference of a circle:
 Input:
 import java.util.*;
 import java.util.Scanner;
@@ -170,7 +170,7 @@ Output :
 6
 Sum of Odd Numbers : 37.68
 
-A function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote:
+(6) A function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote:
 Input:
 import java.util.*;
 import java.util.Scanner;
@@ -198,7 +198,105 @@ Eligible
 17
 Not Eligible
 
+(7) A functions to print out text :
+Input:
+import java.util.*;
+import java.util.Scanner;
 
+public class Functions {
+    public static void printmyname(String name){
+        System.out.println(name);
+        return;
+    }
+    
+ public static void main(String[] args) {
+     Scanner sc= new Scanner(System.in);
+     String a = sc.nextLine();
+    printmyname(a);
+ }
+    
+}
+Output:
+Swaee lee
+Swaee lee
+
+(8) A functions to reverse the String:
+Input:
+import java.util.*;
+import java.util.Scanner;
+
+public class Functions {
+    public static String reverseString(String str){
+        char ch[] = str.toCharArray();
+        String rev = "";
+        for(int i = ch.length-1;i>=0;i--){
+            rev+=ch[i];
+        }
+        return rev;
+    } 
+ 
+    
+ public static void main(String[] args) {
+     Scanner sc= new Scanner(System.in);
+     String a = sc.nextLine();
+     String b = reverseString(a);
+     System.out.println("Reverse String :  " +  b);
+
+
+ }
+    
+}
+Output:
+maya                          
+Reverse String :  ayam 
+
+9876543210
+Reverse String :  0123456789
+
+(9) A function to print out the Prime Number:
+Input:
+import java.util.*;
+import java.util.Scanner;
+
+public class Functions {
+    public static void checkPrime(int n){
+        int i, m = 0, flag = 0;
+        m = n/2;
+        if(n==0||n==1){
+            System.out.println(n + " Not Prime Number");
+        }
+        else{
+            for(i=2; i<=m;i++){
+                if(n%i==0){
+                    System.out.println(n + " Not Prime Number");
+                    flag = 1;
+                    break;
+                }
+            }
+          
+         if(flag==0){
+             System.out.println(n + " Prime Number ");
+         }   
+
+        }
+    }
+    
+ public static void main(String[] args) {
+     Scanner sc= new Scanner(System.in);
+     int a = sc.nextInt();
+     checkPrime(a);
+ }
+    
+}
+Output:
+20
+20 Not Prime Number
+17
+17 Prime Number
+3
+3 Prime Number
+1
+1 Not Prime Number
 
 
 
