@@ -1,0 +1,24 @@
+Fibbonacci Series: 
+Input:
+import java.util.*;
+import java.util.Scanner;
+
+public class Fibbo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int ft = 0; int st = 1; // ft = FIRST TERM , st = SECOND TERM
+        System.out.println(a);
+        for(int i = 1; i<= a; ++i){
+            System.out.print(ft + " ");
+            int nt = ft + st; // nt = NEXT TERM
+            ft = st;
+            st = nt;
+        }
+    } 
+}
+
+Output:
+10
+10
+0 1 1 2 3 5 8 13 21 34
