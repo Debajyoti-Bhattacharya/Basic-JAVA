@@ -69,4 +69,26 @@ Output:
 20
 Swapping the 1st Number: 20
 Swapping the 2nd Number: 10
-  
+ 
+Input:
+import java.util.*;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    int b = sc.nextInt();
+	    a = a ^ b;
+	    b = a ^ b; // Using XOR Operator
+	    a = a ^ b;
+	    System.out.println("Swapping the 1st Number: " + a);
+	    System.out.println("Swapping the 2nd Number: " + b);
+	  }
+}
+Output:
+10
+20
+Swapping the 1st Number: 20
+Swapping the 2nd Number: 10
+
