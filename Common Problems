@@ -22,3 +22,51 @@ Output:
 10
 10
 0 1 1 2 3 5 8 13 21 34
+ 
+Swapping Two Numbers:
+Input:
+import java.util.*;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    int b = sc.nextInt();
+	    int temp = 0; // Extra Variable
+	    temp = a ;
+	    a = b;
+	    b = temp;
+        
+   System.out.println("Swapping the 1st Number: " + a);
+	System.out.println("Swapping the 2nd Number: " + b);  
+    }
+   }
+Output:
+10
+20
+Swapping the 1st Number: 20
+Swapping the 2nd Number: 10
+
+Input:
+import java.util.*;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a = sc.nextInt();
+	    int b = sc.nextInt();
+         a = a + b;
+	    b = a - b; // Without using the extra variable
+	    a = a - b;
+	    System.out.println("Swapping the 1st Number: " + a);
+	    System.out.println("Swapping the 2nd Number: " + b);
+      }
+  } 
+Output:
+10
+20
+Swapping the 1st Number: 20
+Swapping the 2nd Number: 10
+  
